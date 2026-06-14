@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Food for Thought</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+
+layout: default
+title: Food for Thought
+-----------------------
 
 <nav class="menu">
   <a href="index.html">Home</a>
@@ -16,14 +13,15 @@
 
 <h1>Food for Thought</h1>
 
-<div class="post">
-  <h2>What Does Success Really Mean?</h2>
-  <p>
-    Success is often measured by achievements,
-    but perhaps it is also about peace of mind,
-    meaningful relationships, and personal growth.
-  </p>
-</div>
+{% for post in site.posts %}
 
-</body>
-</html>
+<div class="post">
+  <h2>
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  <p>{{ post.excerpt }}</p>
+</div>
+{% endfor %}
