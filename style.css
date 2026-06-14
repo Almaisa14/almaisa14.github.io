@@ -3,57 +3,56 @@ body {
   font-family: Georgia, serif;
   background: #ffffff;
   color: #111;
+  line-height: 1.8;
 }
 
-.topbar {
-  padding: 50px 20px;
+.header {
   text-align: center;
+  padding: 60px 20px 30px;
   border-bottom: 1px solid #eee;
 }
 
-.topbar h1 {
-  font-size: 36px;
+.header h1 {
+  font-size: 42px;
   margin: 0;
 }
 
-.topbar p {
+.header p {
   color: #666;
   margin-top: 10px;
 }
 
-.menu {
+.nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   padding: 15px;
   border-bottom: 1px solid #eee;
 }
 
-.menu a {
+.nav a {
   text-decoration: none;
   color: #444;
   font-weight: bold;
 }
 
-.grid {
-  max-width: 900px;
+.container {
+  max-width: 750px;
   margin: auto;
-  padding: 30px;
-  display: grid;
-  gap: 25px;
+  padding: 30px 20px;
 }
 
-.card {
+.post {
+  padding: 25px 0;
   border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
 }
 
-.card h2 {
-  margin-bottom: 5px;
+.post h2 {
+  margin-bottom: 8px;
 }
 
 .meta {
-  font-size: 12px;
+  font-size: 13px;
   color: #888;
   margin-bottom: 10px;
 }
